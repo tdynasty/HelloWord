@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 映射文件 -->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" > 
+<hibernate-mapping>
+<class name="pojo.Customer" table="CUSTOMER">    <!-- 类对应一个表--> 
+<id name="account" column="ACCOUNT">        
+   <generator class="assigned"/>  </id><!-- 主键的生成策略--><!-- assigned根据用户输入的数字为主键值 --><!--assigned  --><!-- increment数据类型为int或者Integer数据库中不设自增 框架会根据当前数字 自己往上加1 --><!-- identity数据库中自己设自增     Oracle不支持 --><!-- 根据应用于哪个数据库而自动选择哪种生成策略 -->
+ <property name="password" column="PASSWORD" />
+  <property name="cname" column="CNAME" />
+   <property name="cbalance" column="CBALANCE" />
+</class>
+</hibernate-mapping>

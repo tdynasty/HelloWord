@@ -1,0 +1,9 @@
+1、查询Customer表中所有数据 三种遍历方法
+2、查询条件的工具类Restriction Restrictions.like ge between
+3、Order排序查询 分页查询 从第几个查到第几个
+4、Restriction工具类的双条件查询 or 或查询
+5、sql语句表达式 固定写法{alias}.列名        ?占位
+6、查询单条记录crit.uniqueResult();返回的是结果
+7、Restrictions.avg .max 平均值 和最大值 的单值查询
+8、多个统计函数 ProjectionList pl=Projections.projectionList(); 在放到准则对象之后 查询出来的值放到Object对象中 进行遍历 因为很多统计函数结果 有很多类型的数据
+9、投影查询
